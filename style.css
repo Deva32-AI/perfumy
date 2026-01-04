@@ -57,6 +57,15 @@ input{
 .products{
     text-align: center;
     margin-top: 30px;
+      display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 
@@ -73,3 +82,30 @@ input{
     margin-top: 40px;
     padding: 40px;
 }
+
+@media (max-width: 768px) {
+    nav ul {
+        padding: 0;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 8px 0;
+    }
+
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 90%;
+    }
+
+    .searchbox input {
+        width: 90%;
+    }
+}
+
+
